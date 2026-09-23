@@ -5,3 +5,13 @@
 .keep-together{white-space:nowrap}
 @media(max-width:380px){.services-title{font-size:1.8rem}}
 footer a{overflow-wrap:anywhere}
+
+/* Give the complete circular mark enough room to be seen in the header. */
+header nav{min-height:132px;height:auto}
+header nav .brand{display:flex;flex:none;line-height:0}
+header nav .site-logo{display:block;width:116px;height:116px;object-fit:contain;border-radius:0}
+@media(max-width:850px){
+  header nav{min-height:104px}
+  header nav .site-logo{width:90px;height:90px}
+  header nav .links{top:104px}
+}
